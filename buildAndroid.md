@@ -18,10 +18,16 @@ $ sudo apt-get install libx11-dev
 $ sudo apt-get install gperf
 
 第四步： 开始build Android源码了,最好用root权限build.
+
 $ sudo make
 
 
 第五步：若build成功的话，会在源码根目录下生成一个out目录，里面存放了你build的system.img等系统文件，这些就是你编译的ROM文件
+
+启动已经编译好的android img，这个emulator可执行文件是别的SDK已经编译好的工具。
+
+$ sudo ~/adt-bundle-linux-x86-20131030/sdk/tools/emulator -kernel ~/android2.3/prebuilt/android-arm/kernel/kernel-qemu -sysdir ~/android2.3/out/target/product/generic/ -system system.img -data userdata.img -ramdisk ramdisk.img 
+
 
 
 参考：若出现问题，可参考下面的解决方案
