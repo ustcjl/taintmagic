@@ -20,11 +20,11 @@ $ ./repo sync -j4   //4 process run at the same time
 
 下载完成后就可以build该Android源码了，由于下载的是所有版本的Android源码，你得进行版本的切换下面的命令可查看有多少个Andorid的版本
 
-$ .repo/manifests
+$ cd  .repo/manifests
 $ git branch -a | cut -d / -f 3  
 
 当你选定你要编译的版本后，就可以开始切换到该版本去
-$ ./repo init -b "branch-name"  
+$ ./repo init -b "branch-name"  //这里应为android-2.3.4_r1
 $ ./repo sync    //执行切换到该版本的动作
 
 这个切换版本得花一个小时左右的时间，切换好了就可以开始真正的build了。note：最好切换到Android2.3.4版本，因为这得和TaintDroid的版本符合。
