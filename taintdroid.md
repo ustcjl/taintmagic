@@ -6,7 +6,7 @@ http://appanalysis.org/download_2.3.html
 
 关于如何使用emulateor可去百度，也可以来CSS实验室拿<Android 系统源代码情景分析>这本书，参考它的第一章
 
-ps：我还没编译成功，希望你们能build成功啊，加油。。
+注意：选择 Nexus S 这个选项编译，在Step 4 : Build Taintdroid 时 buildspec.mk 是存放在 ~/android/build子目录下的。
 
 在build taintdroid可能会出现以下的错误，下面的解决方案可供参考
 
